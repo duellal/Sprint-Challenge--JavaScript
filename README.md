@@ -47,10 +47,10 @@ Explicit Binding: forces a function to use a certian object as its "this". It is
 - .bind(): returns a new function that is a copy of the original and can be invoked later, and you pass arguments in individually
 - .apply(): immediately invokes the function and you pass in the arguments as an array
 
-New Binding:
-
+New Binding: "this" refers to a newly created Object; if a function is invoked with a constructor function, the "this" keyword refers to the newly created Object. You can either pass arguments in individually or as a single object.
 
 5. Why do we need super() in an extended class?
+We need super(), because it works with extend to do what .call() and Object.create() do when using the prototype method - they make a copy of the function and any attributes or functions associated with the copied function.
 
 ### Task 1 - Project Set up
 
